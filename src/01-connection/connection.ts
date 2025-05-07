@@ -5,7 +5,7 @@ const sleep = (ms: number) => new Promise(resolve => setTimeout(resolve, ms));
 async function connect() {
     try {
         const connection = await amqp.connect('amqp://admin:admin@localhost:5672');
-        console.log('Conectato ao RabbitMQ com sucesso!');
+        console.log('Conectado ao RabbitMQ com sucesso!');
 
         const channel = await connection.createChannel();
         console.log('Canal criado com sucesso!');
